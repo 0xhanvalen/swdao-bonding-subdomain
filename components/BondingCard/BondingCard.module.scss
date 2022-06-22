@@ -1,0 +1,125 @@
+.container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 50px 0px;
+    gap: .5rem;
+}
+
+.dataContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 100%;
+    h4 {
+        color: white;
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    .disconnected {
+        color: gray;
+    }
+    p {
+        font-size: 13px;
+        text-align: left;
+    }
+}
+
+.modalBackground {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 21;
+}
+
+.modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #150637;
+    border: 1px solid #857AFD;
+    border-radius: 50px 0px;
+    z-index: 22;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+}
+
+.modalInputArea {
+    display: flex;
+    justify-content: center;
+}
+
+.modalTextInput {
+    border: 1px solid #AADCFE;
+    color: #AADCFE;
+    background-color: transparent;
+    outline: none;
+    padding: 0 1rem;
+    input {
+        background-color: transparent;
+        outline: none;
+    }
+}
+
+.modalCurrencyIndicator {
+    border: 1px solid #AADCFE;
+    border-left: none;
+    color: #AADCFE;
+    background-color: transparent;
+    outline: none;
+    width: fit-content;
+    padding: 0 0.5em;
+}
+
+.containerWrapper {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+}
+
+.bondTableHeader {
+    font-size: 8px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.bondTableRow {
+    font-size: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &:hover {
+        cursor: default;
+    }
+}
+
+.bondTablePages {
+    font-size: 8px;
+
+    width: 80%;
+    margin: 1em auto;
+    &:hover {
+        cursor: pointer;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
